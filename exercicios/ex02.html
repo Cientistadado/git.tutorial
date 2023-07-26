@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area {
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgba(12, 192, 12, 0.904); 
+            color:black;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.671);
+        }
+    </style>
+
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    
+    <script> 
+
+        /* nesse comando de códigos podemos ver os eventos quando passamos o mouse em cima , quando climamos e quando o mouse sai do quadrindo , tudo isso usando o DOM. */
+
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)   //adiciona eventos que aconteçerão no bloco de codigos 
+        a.addEventListener('mouseenter' ,entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar() {
+            var a = document.getElementById('area')
+            a.innerText = 'clicou !'
+            a.style.background = 'yellow'                     // bloco de códigos
+            a.style.color = 'black'
+        }
+
+        function entrar(){
+            var a = document.getElementById('area')
+            a.innerText = 'Entrou'
+            a.style.background = 'blue'                      // bloco de códigos
+            a.style.color = 'white'
+        }
+
+        function sair(){
+            var a = document.getElementById('area')
+            a.innerText = 'Saiu'
+            a.style.background = 'red'
+           
+        }
+    </script>
+    
+</body>
+</html>
