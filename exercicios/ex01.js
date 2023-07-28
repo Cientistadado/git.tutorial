@@ -4,3 +4,4 @@ const n2 = Number.parseInt(prompt('Digite outro numero:'));
 const s = n1 + n2 ;
 alert(`O resultado é ${s} ` )
 //alert('É um prazer teconhecer '+ nome + ' !')
+

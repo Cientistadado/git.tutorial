@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran Mg</title>
+</head>
+<body>
+    <h1>Sistemas de multas</h1>
+    <h2>Velocidade permitida na via 60 Km/h</h2>
+    velociade atual : <input type="number" name="velo1" id="velo1">Km/h
+    <input type="button" value="Verificar..." onclick="calcular()"> 
+    <div id="res"></div>
+
+    <script>
+        function calcular() {       // chamamos a função calcular
+            var velociade = document.querySelector('input#velo1')  // variavel que recebe doc. id
+            var res = document.querySelector('div#res')            // variavel recebe doc. id  
+            var vel = Number(velociade.value)    // convertendo a variavel para Number
+            res.innerHTML = `<p>Sua velocidade atual é <strong>${vel}</strong>Km/h</p>` // variavel res recebendo texto Html
+
+            if (vel > 60) {     // condição se
+                res.innerHTML += `<p><strong> MULTADO! </strong> velocidade acima do permitido.`
+            
+            }else {             // condição senão
+                res.innerHTML += `<p>Dirija com seguraça!`
+            }
+        }
+    </script>
+
+  
+</body>
+</html>
