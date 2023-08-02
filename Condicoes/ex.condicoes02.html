@@ -16,12 +16,13 @@
         function verificar() {
             var nacional = document.querySelector('input#nacio01')
             var res = document.querySelector('div#res')
-            res.innerHTML = `<p> Bem vindo ${nacional} </P>`
-            var naci = Brasileiro
-'
-            if (nacional == naci) {
+            var bra = String(nacional.value)
+            res.innerHTML = `<p> Bem vindo !!! </P>`
+            
 
-                res.innerHTML += `<p> Voce é Brasileiro </P> !`
+            if (bra == 'Brasileiro') {
+
+                res.innerHTML += `<p> Voce é Brasileiro ! </P> `
 
             } else {
                 res.innerHTML += `<p> Voce é estrangeiro  !</p> `
