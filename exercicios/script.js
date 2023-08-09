@@ -1,31 +1,26 @@
-//          CONDIÇÕES MULTIPLAS
-
-var agora = new Date()
-var diaSem = agora.getDay()
-
-//  console.log(`Hoje é ${diaSem}`)
-
-switch (diaSem) {
-    case 0:
-        console.log('Otimo Domingo')
-        break
-    case 1:
-        console.log('Otima Segunda Feira')
-        break
-    case 2:
-        console.log('Otima Terça Feira')
-        break
-    case 3:
-        console.log('Otima Quarta Feira')
-        break
-    case 4:
-        console.log('Otima Quinta Feira')
-        break
-    case 5:
-        console.log('Otima Sexta Feira')
-        break
-    case 6:
-        console.log('Otimo Sabado')
-        break
+function carregar()  {
+    var msg = document.getElementById('msg')
+    var img = document.getElementById('imagem')
+    var data = new Date()
+    var hora = data.getHours()
     
+
+    if (hora > 0 && hora < 12) {
+        // Bom dia !
+        img.src = 'manha01.jpg' 
+        msg.innerHTML = `BOM DIA ! Agora são ${hora} horas`
+        document.body.style.background = '#e2cd9f'
+    
+    } else if ( hora >= 12 && hora < 18) {
+        // Boa tarde !
+        img.src = 'tarde-01.jpg'
+        msg.innerHTML = `BOA TARDE !  Agora são ${hora} horas`
+        document.body.style.background = '#b9846f'
+    
+    } else {
+        // Boa noite !
+        img.src = 'noite01.jpg'
+        msg.innerHTML = `BOA NOITE !  Agora são ${hora} horas`
+        document.body.style.background = '#515154'
+    }
 }
