@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(70, 142, 236);
+    font: normal 15 pt Arial ;
+}
+
+header {
+    color: white;
+    
+}
+
+form {
+
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.616);
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
+
+section, article {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    padding-bottom: 8px;
+ 
+}
+#res, p {
+    text-transform: uppercase;
+}
+ input#ver:hover{
+    background-color: rgba(150, 150, 179, 0.664);
+ }
