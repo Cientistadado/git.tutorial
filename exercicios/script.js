@@ -4,7 +4,6 @@ function carregar()  {
     var data = new Date()
     var hora = data.getHours()
     
-
     if (hora > 0 && hora < 12) {
         // Bom dia !
         img.src = 'manha01.jpg' 
