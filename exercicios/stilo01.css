@@ -19,6 +19,12 @@ form {
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.616);
 }
+img {
+    margin: auto;
+    margin-bottom: 50px;
+    
+
+}
 
 h1{
     text-align: center;
